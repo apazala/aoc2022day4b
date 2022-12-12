@@ -16,7 +16,7 @@ int main(){
     for(int len = nextLine(line); len > 0; len = nextLine(line)){
         sscanf(line, "%d-%d,%d-%d", &ai, &af, &bi, &bf);
         abi = (ai < bi?ai:bi);
-        abf= (af > bf?af:bf);
+        abf = (af > bf?af:bf);
         na = af - ai + 1;
         nb = bf - bi + 1;
         nabmax = abf-abi+1;
